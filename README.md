@@ -1,15 +1,22 @@
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # demo.compendium
 
 <!-- badges: start -->
 
-[![License: GPL (&gt;=
+[![License: GPL (\>=
 2)](https://img.shields.io/badge/License-GPL%20%28%3E%3D%202%29-blue.svg)](https://choosealicense.com/licenses/gpl-2.0/)
 [![Dependencies](https://img.shields.io/badge/dependencies-3/70-green?style=flat)](#)
 <!-- badges: end -->
 
-Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**
+<br />
+
+**This repository was automatically created using the R package
+[`rcompendium`](https://cran.r-project.org/package=rcompendium) and the
+function `new_compendium(renv = TRUE, dockerfile = TRUE)`**
+
+<br />
 
 ### How to cite
 
@@ -52,23 +59,23 @@ This repository is structured as follow:
 -   Open a terminal
 -   Build the Docker image with:
 
-<!-- -->
-
-    docker build -t "demo.compendium" .
+``` sh
+docker build -t "demo.compendium" .
+```
 
 -   Start a container based on this image:
 
-<!-- -->
-
-    docker run --rm -p 127.0.0.1:8787:8787 -e DISABLE_AUTH=true demo.compendium
+``` sh
+docker run --rm -p 127.0.0.1:8787:8787 -e DISABLE_AUTH=true demo.compendium
+```
 
 -   On a web browser enter this URL: `127.0.0.1:8787`. A new RStudio
     Server instance will be available.
 -   To run the analysis:
 
-<!-- -->
-
-    source("make.R")
+``` r
+source("make.R")
+```
 
 ### Notes
 

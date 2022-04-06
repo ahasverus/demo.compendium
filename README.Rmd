@@ -23,7 +23,14 @@ knitr::opts_chunk$set(collapse  = TRUE,
 <!-- badges: end -->
 
 
-Research Compendium of the project **{{ PLEASE ADD A FEW WORDS }}**
+<br />
+
+**This repository was automatically created using the R package 
+[`rcompendium`](https://cran.r-project.org/package=rcompendium) and the
+function `new_compendium(renv = TRUE, dockerfile = TRUE)`**
+
+<br />
+
 
 
 
